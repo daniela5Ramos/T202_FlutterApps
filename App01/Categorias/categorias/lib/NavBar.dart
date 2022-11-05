@@ -28,7 +28,7 @@ class NavBar extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
-                  '',
+                  'file:///C:/Users/Erika%20Ramirez/Documents/T202_FlutterApps/imagenes/web_first_images_release_0.png',
                 ),
                 fit: BoxFit.cover,
               ),
