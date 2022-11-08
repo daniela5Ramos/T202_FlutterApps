@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       drawer: NavBar(),
       appBar: AppBar(
-        title: Text('CATEGORIAS'),
+        title: Text('BARRA DE NAVEGACION'),
       ),
       body: Center(),
     );
