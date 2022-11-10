@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:categorias/NavBar.dart';
+import 'package:categorias/Principal.dart';
+import 'package:categorias/Categorias.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,6 +29,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
+
+/*
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: NavBar(),
@@ -34,6 +38,18 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('BARRA DE NAVEGACION'),
       ),
       body: Center(),
+    );
+  }
+  */
+
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: {
+        "/": (context) => Principal(),
+        //"RegistroPage": (context) => RegistroPage(),
+        //"homePage": (context) => HomePage(),
+      },
     );
   }
 }
