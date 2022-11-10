@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:categorias/Categorias.dart';
 import 'package:categorias/Masvendidos.dart';
+import 'package:categorias/Masnuevo.dart';
 
 class Principal extends StatelessWidget {
   const Principal({super.key});
@@ -72,6 +73,30 @@ class Principal extends StatelessWidget {
             ),
           ),
           Categorias(),
+
+          const Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child: Text(
+              "Productos más vendidos",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+          Masvendidos(),
+
+          const Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child: Text(
+              "Lo más nuevo",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+          Masnuevo(),
         ],
       ),
     );

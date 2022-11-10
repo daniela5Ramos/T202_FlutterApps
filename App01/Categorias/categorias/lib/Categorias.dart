@@ -1,4 +1,5 @@
 import 'package:categorias/Masvendidos.dart';
+import 'package:categorias/Masnuevo.dart';
 import 'package:flutter/material.dart';
 
 class Categorias extends StatelessWidget {
@@ -218,19 +219,8 @@ class Categorias extends StatelessWidget {
             ),
 
           //PRODUCTOS MÁS VENDIDOS
-          const Padding(
-            padding: EdgeInsets.only(top: 20, left: 10),
-            child: Text(
-              "Productos más vendidos",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
-            ),
-          ),
 
           //Mas vendidos widget
-          Masvendidos(),
         ]),
       ),
     );
