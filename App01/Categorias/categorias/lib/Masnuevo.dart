@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class Masnuevo extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -55,6 +56,19 @@ class Masnuevo extends StatelessWidget {
                             fontSize: 10,
                             fontWeight: FontWeight.bold,
                           ),
+                        ),
+                        RatingBar.builder(
+                          initialRating: 4,
+                          maxRating: 1,
+                          direction: Axis.horizontal,
+                          itemCount: 5,
+                          itemSize: 18,
+                          itemPadding: EdgeInsets.symmetric(horizontal: 4),
+                          itemBuilder: (context, _) => Icon(
+                            Icons.star,
+                            color: Colors.amber[400],
+                          ),
+                          onRatingUpdate: (index) {},
                         ),
                       ],
                     ),
